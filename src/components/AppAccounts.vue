@@ -29,6 +29,7 @@
                 <th scope="col">Account Currency</th>
                 <th scope="col">Account Status</th>
                 <th scope="col">Actions</th>
+                <th scope="col">Country</th>
               </tr>
             </thead>
             <tbody>
@@ -37,6 +38,7 @@
                 <td>{{ account.account_number }}</td>
                 <td>{{ account.balance }}</td>
                 <td>{{ account.currency }}</td>
+                <td>{{ account.country }}</td>
                 <td>
                   <span
                     v-if="account.status == 'Active'"
@@ -271,6 +273,7 @@ export default {
     initForm() {
       this.createAccountForm.name = "";
       this.createAccountForm.currency = "";
+      this.createAccountForm.country = "";
       this.editAccountForm.id = "";
       this.editAccountForm.name = "";
     },

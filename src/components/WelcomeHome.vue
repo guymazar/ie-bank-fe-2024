@@ -1,7 +1,7 @@
 <!-- WelcomeHome.vue -->
 <template>
     <div class="welcome-container text-center">
-      <h1>Welcome to the Account Management Portal</h1>
+      <h1>Welcome to IE's Official Bank</h1>
       <p>We're glad to have you here. Manage your accounts easily and securely.</p>
       <button class="btn btn-primary" @click="goToAccounts">Manage Accounts</button>
     </div>
@@ -12,7 +12,7 @@
     name: "WelcomeHome",
     methods: {
       goToAccounts() {
-        this.$router.push({ name: "AppAccounts" }); // Assuming you have a route for the accounts page
+        this.$router.push({ name: "AppAccounts" }); 
       },
     },
   };
@@ -25,7 +25,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f8ff;
+    background-color: #5492c7;
   }
   h1 {
     font-size: 2.5rem;
