@@ -73,8 +73,8 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: node-app-uat
-          path: dist-dev/
+          name: node-app-dev
+          
 
       - uses: azure/login@v2
         with:
